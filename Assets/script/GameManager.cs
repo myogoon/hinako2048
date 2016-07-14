@@ -65,21 +65,17 @@ public class GameManager : MonoBehaviour {
 		clearui.SetActive (false);
 	}
 	public void Button_tweet(){
-		#if UNITY_IOS
-		Application.OpenURL ("https://www.twitter.com/intent/tweet?text=%E3%82%84%E3%81%A3%E3%81%B1Hinako2048%E3%81%A0%E3%81%AD%28%E2%97%8F+%C2%B4+%E2%96%BD+%60%E2%97%8F%29%EF%BE%89%E2%99%A1"+"%0A&url=https://twitter.com/hinako_kuroki&hashtags=hinako2048");
-		#else
-		Application.OpenURL ("https://www.twitter.com/intent/tweet?text=%E3%82%84%E3%81%A3%E3%81%B1Hinako2048%E3%81%A0%E3%81%AD%28%E2%97%8F+%C2%B4+%E2%96%BD+%60%E2%97%8F%29%EF%BE%89%E2%99%A1"+"%0A&url=https://twitter.com/hinako_kuroki&hashtags=hinako2048");
-		#endif
+		Application.OpenURL ("https://www.twitter.com/intent/tweet?text=%E3%82%84%E3%81%A3%E3%81%B1Hinako2048%E3%81%A0%E3%81%AD%28%E2%97%8F+%C2%B4+%E2%96%BD+%60%E2%97%8F%29%EF%BE%89%E2%99%A1"+"%0AAndroid : https://goo.gl/NZmhkT%0AIOS : "+"https://goo.gl/ej197N"+"%0A" + "&hashtags=hinako2048");
+	
 
 
 	}
 
 	public void Button_gameover_tweet(){
-		#if UNITY_IOS
-		Application.OpenURL ("https://www.twitter.com/intent/tweet?text=%E6%9C%80%E7%B5%82%E3%82%B9%E3%82%B3%E3%82%A2%E3%81%AB%E3%82%85%E3%83%BC%E3%82%93%28%E2%97%8F%E3%83%BB%CF%89%E3%83%BB%E2%97%8F%29%0A%E2%96%B6"+score+"%E7%82%B9&url=https://twitter.com/hinako_kuroki&hashtags=hinako2048");
-		#else
-		Application.OpenURL ("https://www.twitter.com/intent/tweet?text=%E6%9C%80%E7%B5%82%E3%82%B9%E3%82%B3%E3%82%A2%E3%81%AB%E3%82%85%E3%83%BC%E3%82%93%28%E2%97%8F%E3%83%BB%CF%89%E3%83%BB%E2%97%8F%29%0A%E2%96%B6"+score+" %E7%82%B9&url=https://twitter.com/hinako_kuroki&hashtags=hinako2048");
-		#endif
+		
+
+		Application.OpenURL ("https://www.twitter.com/intent/tweet?text=%E6%9C%80%E7%B5%82%E3%82%B9%E3%82%B3%E3%82%A2%E3%81%AB%E3%82%85%E3%83%BC%E3%82%93%28%E2%97%8F%E3%83%BB%CF%89%E3%83%BB%E2%97%8F%29%0A%E2%96%B6"+score+"%E7%82%B9%0AAndroid : https://goo.gl/NZmhkT%0AIOS : "+"https://goo.gl/ej197N"+"%0A" + "&hashtags=hinako2048");
+	
 
 
 	}

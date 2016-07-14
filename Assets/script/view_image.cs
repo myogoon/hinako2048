@@ -42,7 +42,7 @@ public class view_image : MonoBehaviour {
 		t_512 = Resources.Load ("512") as Texture2D;
 		t_1024 = Resources.Load ("1024") as Texture2D;
 		t_2048 = Resources.Load ("2048") as Texture2D;
-		t_4096 = Resources.Load ("66338") as Texture2D;
+		t_4096 = Resources.Load ("4096") as Texture2D;
 
 	}
 
